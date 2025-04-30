@@ -12,6 +12,12 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-pub mod kstd;
-pub mod storage;
-pub mod core;
+#[derive(Debug)]
+#[allow(dead_code)]
+pub struct Client {
+    id: u32,
+    flag: u32,
+    argv: Vec<String>,
+    query_buf: Vec<u8>,
+}
+

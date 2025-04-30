@@ -7,6 +7,7 @@ repository = "https://github.com/arana-db/kiwi-rs"
 edition = "2024"
 
 [dependencies]
+redis-protocol = "6.0.0"
 rocksdb = "0.23.0"
 log = "0.4"
 bytes = "1"

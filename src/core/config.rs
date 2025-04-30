@@ -12,6 +12,11 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-pub mod kstd;
-pub mod storage;
-pub mod core;
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn test_hello_world() {
+        println!("hello world");
+    }
+}

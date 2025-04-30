@@ -11,7 +11,25 @@
 //  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
+use crate::core::client::Client;
 
-pub mod kstd;
-pub mod storage;
-pub mod core;
+#[allow(dead_code)]
+pub struct Command {
+    name: String,
+    proc: Option<fn(Client)>,
+}
+
+fn my_command(client: Client) {
+    println!("My command executed with client: {:?}", client);
+}
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn test_command_macro() {
+        // let commands = get_commands();
+        // assert_eq!(commands.len(), 0);
+        // assert_eq!(commands[0].name, "my_command");
+    }
+}
+

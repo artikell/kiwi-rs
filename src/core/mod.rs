@@ -12,6 +12,7 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-pub mod kstd;
-pub mod storage;
-pub mod core;
+pub mod client;
+pub mod command;
+pub mod config;
+pub mod resp;
