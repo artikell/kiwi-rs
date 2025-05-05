@@ -6,6 +6,8 @@ readme = "README.md"
 repository = "https://github.com/arana-db/kiwi-rs"
 edition = "2024"
 
+[workspace]
+
 [dependencies]
 redis-protocol = "6.0.0"
 rocksdb = "0.23.0"
@@ -13,3 +15,5 @@ log = "0.4"
 bytes = "1"
 chrono = "0.4.40"
 thiserror = "1.0"
+lazy_static = "1.4"
+tokio = { version = "1", features = ["full"] }

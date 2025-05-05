@@ -14,4 +14,4 @@
 
 pub mod kstd;
 pub mod storage;
-pub mod core;
+pub mod server;
