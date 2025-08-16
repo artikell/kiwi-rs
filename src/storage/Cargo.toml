@@ -15,7 +15,6 @@ name = "storage_basic_test"
 path = "tests/storage_basic_test.rs"
 
 [dependencies]
-rocksdb.workspace = true 
 log.workspace = true
 thiserror.workspace = true
 anyhow.workspace = true
@@ -35,6 +34,4 @@ tokio.workspace = true
 tempfile.workspace = true
 crc16.workspace = true
 moka = { version = "0.12", features = ["sync"] }
-
-
-
+rocksdb = { version = "0.23.0", features = ["multi-threaded-cf"] }

@@ -51,6 +51,11 @@ miri:
 	@echo "Running miri..."
 	@cargo miri test --manifest-path ./Cargo.toml --all-features --workspace
 
+setup:
+	@echo "Setting up environment..."
+	@rustup toolchain install nightly
+	@rustup component add rustfmt --toolchain nightly
+
 help:
 	@echo "Available commands:"
 	@echo "  build         - Build the project"

@@ -7,7 +7,6 @@ edition.workspace = true
 workspace = true 
 
 [dependencies]
-rocksdb.workspace = true 
 log.workspace = true
 thiserror.workspace = true
 parking_lot.workspace = true
